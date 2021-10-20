@@ -2,7 +2,7 @@
 #include "cars.h"
 
 namespace cars {
-    // Car factory function - please call this when you want a new car
+    // Car constructor
     Car::Car(string newOwner, double newValue) {
         cout << newOwner << " got a new car for $" << newValue << endl;
         
