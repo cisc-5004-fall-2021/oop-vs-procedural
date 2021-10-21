@@ -2,6 +2,16 @@
 #include "cars.h"
 
 namespace cars {
+    // Constructor: Create a new car with all properties
+    Car::Car(double newX, double newY, double newFuel, string newOwner, double newValue, bool newIsBroken) {
+        x = newX;
+        y = newY;
+        fuel = newFuel;
+        owner = newOwner;
+        value = newValue;
+        isBroken = newIsBroken;
+    }
+    
     // Car constructor
     Car::Car(string newOwner, double newValue) {
         cout << newOwner << " got a new car for $" << newValue << endl;
@@ -59,7 +69,7 @@ namespace cars {
         value *= 0.5;
     }
 
-    double Car::getValue() {
+    double Car::getValue() const {
         return value;
     }
 }
