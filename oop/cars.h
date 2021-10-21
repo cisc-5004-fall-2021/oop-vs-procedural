@@ -5,6 +5,9 @@ namespace cars {
 
     class Car {
         public:
+            // Constructor: Create a new car with all properties
+            Car(double, double, double, string, double, bool);
+
             // Constructor: Create a new car with a name and value
             Car(string, double);
 
@@ -24,7 +27,7 @@ namespace cars {
             void wreck();
 
             // Getter function to retrieve the current valuation of the car
-            double getValue();
+            double getValue() const;
         private:
             double x, y;
             double fuel;

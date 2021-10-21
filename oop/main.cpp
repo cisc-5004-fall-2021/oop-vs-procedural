@@ -24,4 +24,11 @@ int main() {
     double value = myCar.getValue();
     value = 10000;
     myCar.sell("Alice", 1500);
+
+    // Multiple constructor and const demo:
+    const cars::Car myConstCar {10, 2, 0.2, "Matt", 5000, false};
+    cout << endl << "Constant car value: $" << myConstCar.getValue() << endl;
+
+    // Uncomment for compiler error
+    // myConstCar.refuel();
 }
